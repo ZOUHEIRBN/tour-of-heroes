@@ -1,0 +1,13 @@
+<!--  -->
+<ul>
+  <li [class.selected]="hero === selectedHero" *ngFor="let hero of heroes" (click)="onSelect(hero)">
+    <!-- <label>
+      Name:
+      <input [(ngModel)]="hero.name" placeholder="Name"/>
+    </label> -->
+    <h2><i>#{{ hero.id }}</i> {{hero.name}}</h2>
+    <app-hero-details [hero]="hero === selectedHero"></app-hero-details>
+  </li>
+</ul>
+
+

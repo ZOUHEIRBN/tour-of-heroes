@@ -1,0 +1,43 @@
+*{
+  transition: all .5s ease;
+}
+li{
+  display: block;
+  background-color: rgb(230, 151, 48);
+  margin-top: 3px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+li h2{
+  color: black;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+li i{
+  background-color: black;
+  color: rgb(230, 151, 48);
+  padding: 25px;
+  width: 10%;
+}
+li.selected{
+  background-color: aquamarine;
+}
+li.selected h2{
+  color: black;
+}
+li.selected i{
+  background-color:black;
+  color: aquamarine;
+}
+
+li:hover{
+  transform: scale(1.015);
+  background-color: lightcoral;
+}
+
+li:hover i{
+  color: lightcoral;
+}
+
